@@ -1,0 +1,25 @@
+name: Auto Pull Request to Main
+
+on:
+  push:
+    branches:
+      - salib   # Replace with your first branch name
+      - lokesh   # Replace with your second branch name
+
+jobs:
+  create-pull-request:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: main   # Target branch for the pull request
+          branch: ${{ github.ref_name }} # Source branch where push happened
+          title: 'Auto-generated Pull Request'
+          body: |
+            This pull request was automatically generated because of a push to the branch {{ github.ref_name }}.
