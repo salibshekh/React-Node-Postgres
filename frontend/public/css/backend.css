@@ -1,0 +1,170 @@
+.table-responsive .pagination li{margin-right: 10px;}
+.parsley-errors-list{padding-left: 5px;}
+.parsley-errors-list li{list-style: none;color: red;}
+.form-control.parsley-error{border-color: red !important;}
+.each-product-sec .product-sec-btn{margin-top: 38px;}
+.all-product-sec{padding: 10px; border: 1px solid #e3e3e3; border-radius: 5px;margin-top: 10px;}
+.order-detail-sec{padding: 15px; background: #e3e3e3; margin: 15px; border-radius: 10px; color: #000;}
+.order-detail-sec .each-detail{display: flex ; align-items: center; justify-content: space-between;}
+.order-detail-sec .each-detail span{font-weight: 600;}
+.order-detail-sec .each-detail h6{font-size: 16px;}
+.collection-products-div{display: flex;align-items: center;flex-wrap: wrap;}
+.collection-products-div .collection-each-product{margin-right: 10px;position: relative;cursor: pointer;}
+.collection-products-div .collection-each-product .img-sec{padding: 5px;border: 2px solid #000;}
+.collection-products-div .collection-each-product img{width: 250px;height: 250px;}
+.collection-products-div .collection-each-product .img-sec.selected{opacity: 0.5;}
+.collection-products-div .collection-each-product p{text-align: center;}
+.collection-products-div .collection-each-product button{position: absolute; right: -14px; top: -14px;}
+.avatar-upload {
+    position: relative;
+    max-width: 205px;
+    .avatar-edit {
+        position: absolute;
+        right: 12px;
+        z-index: 1;
+        top: 10px;
+        input {
+            display: none;
+            + label {
+                display: inline-block;
+                width: 34px;
+                height: 34px;
+                margin-bottom: 0;
+                border-radius: 100%;
+                background: #FFFFFF;
+                border: 1px solid transparent;
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+                cursor: pointer;
+                font-weight: normal;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    background: #f1f1f1;
+                    border-color: #d6d6d6;
+                }
+                &:after {
+                    content: "\f040";
+                    font-family: 'FontAwesome';
+                    color: #757575;
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    .avatar-preview {
+        width: 192px;
+        height: 192px;
+        position: relative;
+        border-radius: 100%;
+        border: 6px solid #F8F8F8;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+        > div {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+
+.listing-switch .listing-check{width: 50px; height: 25px;cursor: pointer;}
+
+.rating-sec {
+    height: 46px;
+    width: 220px;
+    padding: 0 10px;
+}
+.rating-sec:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rating-sec:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:40px !important;
+    color:#ccc !important;
+}
+.rating-sec:not(:checked) > label:before {
+    content: '★ ';
+}
+.rating-sec > input:checked ~ label {
+    color: #ffc700 !important;
+}
+.rating-sec:not(:checked) > label:hover,
+.rating-sec:not(:checked) > label:hover ~ label {
+    color: #deb217 !important;
+}
+.rating-sec > input:checked + label:hover,
+.rating-sec > input:checked + label:hover ~ label,
+.rating-sec > input:checked ~ label:hover,
+.rating-sec > input:checked ~ label:hover ~ label,
+.rating-sec > label:hover ~ input:checked ~ label {
+    color: #c59b08 !important;
+}
+.list-rating .inner-label{width:1em;overflow:hidden;white-space:nowrap;font-size:30px !important;}
+.list-rating .inner-label:before{content: '★ ';}
+.list-rating .inner-label.yellow{color: #ffc700 !important;}
+.list-rating .inner-label.gray{color: #ccc !important;}
+.search-sec select{appearance: none;background-repeat: no-repeat;background-position: calc(100% - 10px) center;background-size: auto 1em;background-image: url('../img/down-arrow-svgrepo-com.svg');}
+
+.logo-slider-sec .preview_img_div{padding: 10px;}
+.logo-slider-sec .preview_img_div .each_preview_div{border: 2px solid #e3e3e3; padding: 5px; display: flex ; align-items: center; justify-content: space-between;margin-bottom: 10px;width: 49%; margin-right: 10px;}
+.logo-slider-sec .preview_img_div .each_preview_div img{width: 100px; height: 100px;}
+.logo-slider-sec .preview_img_div .each_preview_div .remove_file_btn{color: red; font-size: 30px;}
+.logo-slider-sec .preview_img_div .each_preview_div .progress{width: 100%; margin-left: 25px; margin-right: 25px;height: 23px !important;}
+
+
+.profile-page .inner-sec .name{font-size: 16px; color: #000; font-weight: 600;}
+.profile-page .inner-sec .details{color: #000;}
+.profile-page .inner-sec{margin-bottom: 10px;}
+.profile-page .inner-sec .details .active-sec{background: green; width: 10px; height: 10px; display: inline-block; border-radius: 100%; margin-right: 5px;margin-left: 10px;}
+.profile-page .below-sec{margin-top: 20px;background: #e3e3e3; padding: 15px; border-radius: 5px;}
+.profile-page .below-sec .each-sec h6{font-weight: 700; font-size: 16px;}
+.profile-page .below-sec .each-sec p{margin-left: 15px;}
+
+
+.chats-page{margin-left: 10px;height: 70vh;}
+.chats-page .chats-left-sec{background: #e3e3e3; padding: 15px; border-radius: 5px;height: 66vh;}
+.chats-page .chats-left-sec .each-user-sec{padding: 5px; border: 1px solid #000; border-radius: 5px; display: flex ;margin-bottom: 10px;cursor: pointer;justify-content: space-between; align-items: center;}
+.chats-page .chats-left-sec .each-user-sec img{border-radius: 5px; margin-right: 12px; width: 80px; height: 80px;}
+.chats-page .chats-left-sec .each-user-sec .user-detail-sec span{color: #000; font-size: 16px; font-weight: 600;}
+.chats-page .chats-left-sec .each-user-sec .count-seen-sec{margin-right: 15px; background: green; text-align: center; border-radius: 50%; color: #fff; padding: 3px 10px; font-size: 14px;}
+.chats-page .chats-right-sec .inner-div{margin-right: 10px;}
+.chats-page .chats-right-sec .inner-div .header-sec{display: flex ; background: #e3e3e3; padding: 15px; border-radius: 5px;}
+.chats-page .chats-right-sec .inner-div .header-sec img{width: 100px; height: 100px; border-radius: 5px; margin-right: 15px;}
+.chats-page .chats-right-sec .inner-div .header-sec .name-sec span{font-size: 18px; font-weight: 700; color: #000;}
+.chats-page .chats-right-sec .inner-div .content-sec{height: 48vh;overflow-y: auto;}
+.chats-page .chats-right-sec .inner-div .content-sec span{padding: 10px; color: #fff; border-radius: 20px;}
+.chats-page .chats-right-sec .inner-div .content-sec .sent-message{text-align: right;margin-bottom: 5px;margin-top: 15px;position: relative;}
+.chats-page .chats-right-sec .inner-div .content-sec .sent-message span{background: #36ab36;}
+.chats-page .chats-right-sec .inner-div .content-sec .sent-message span a{color: #fff; text-decoration: underline !important;}
+.chats-page .chats-right-sec .inner-div .content-sec .received-message{text-align: left;margin-bottom: 5px;margin-top: 15px;}
+.chats-page .chats-right-sec .inner-div .content-sec .received-message span{background: #252222;}
+.chats-page .chats-right-sec .inner-div .content-sec .received-message span a{color: #fff; text-decoration: underline !important;}
+.chats-page .chats-right-sec .inner-div .content-sec .sent-time-sec{text-align: right;}
+.chats-page .chats-right-sec .inner-div .content-sec .received-time-sec{text-align: left;}
+.chats-page .chats-right-sec .inner-div .content-sec .time-tag{margin-bottom: 0; font-size: 12px;}
+.chats-page .chats-right-sec .inner-div .send-sec{display: flex ; align-items: center;}
+.chats-page .chats-right-sec .inner-div .send-sec label i{font-size: 40px; margin-right: 10px;color: #000;cursor: pointer;}
+.chats-page .chats-right-sec .inner-div .send-sec img{width: 32px;}
+.chats-page .chats-right-sec .inner-div .send-sec input{height: 40px; margin-right: 15px; width: 94%;}
+.chats-page .chats-right-sec .inner-div .sent-time-sec .seen-tick{color: blue;}
+.chats-page .chats-right-sec .inner-div .sent-time-sec .delivered-tick{color: #766d6d;}
+.chats-right-sec{position: relative;}
+.chats-right-sec .chat-loader{width: 100px; height: 100px; border-radius: 100%; position: absolute; margin: 0 auto;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+.chats-right-sec .chat-loader:before{z-index: 100; animation: spin 1s infinite;}
+.chats-right-sec .chat-loader:before,.chats-right-sec .chat-loader:after{content: ""; position: absolute; top: -10px; left: -10px; width: 100%; height: 100%; border-radius: 100%; border: 10px solid transparent; border-top-color: #3498db;}
+.chats-right-sec .chat-loader:after{border: 10px solid #ccc;}
+.chats-page .chats-right-sec .inner-div .content-sec .sent-message .delete-option{background: #fff; color: #000;cursor: pointer;}
+.chats-page .chats-right-sec .inner-div .content-sec .delete-sec{position: absolute; right: 27px; background: #fff; box-shadow: 0px 1px 4px 3px #e3e3e3; padding: 5px; top: 52px;z-index: 999;}
+.chats-page .chats-right-sec .inner-div .content-sec .delete-sec p{text-align: left; margin-bottom: 0;cursor: pointer;}
+.chats-page .chats-right-sec .inner-div .content-sec .sent-message.deleted .message-tag, .chats-page .chats-right-sec .inner-div .content-sec .received-message.deleted .message-tag{background: #e3e3e3; color: #000; font-style: italic;}
